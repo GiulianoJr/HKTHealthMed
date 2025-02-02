@@ -51,7 +51,7 @@ public class UsuarioController : ControllerBase
         return usuario;
     }
 
-    [HttpPost("logar")]
+    [HttpPost("Login")]
     public async Task<IActionResult> Login([FromBody] LoginRequest loginRequest)
     {
         var usuario = await _usuarioRepository.GetUsuarioByEmailSenha(loginRequest.Email, loginRequest.Senha);

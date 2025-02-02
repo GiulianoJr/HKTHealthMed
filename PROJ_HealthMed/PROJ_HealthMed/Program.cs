@@ -34,10 +34,11 @@ var configuration = new ConfigurationBuilder().AddJsonFile("appsettings.json").B
 var stringConexao = configuration.GetValue<string>("ConnectionStringSQL");
 // Add services to the container.
 builder.Services.AddSingleton<IDbConnection>((conexao) => new SqlConnection(stringConexao));
-builder.Services.AddSingleton<IUsuarioRepository, UsuarioRepository>();
-builder.Services.AddSingleton<IAgendaRepository, AgendaRepository>();
-builder.Services.AddSingleton<IAgendamentoRepository, AgendamentoRepository>();
-builder.Services.AddSingleton<INotificacaoRepository, NotificacaoRepository>();
+builder.Services.AddSingleton<IPaciente, PacienteRepository>();
+builder.Services.AddSingleton<IMedico, MedicoRepository>();
+builder.Services.AddSingleton<IAgenda, AgendaRepository>();
+builder.Services.AddSingleton<IAgendamento, AgendamentoRepository>();
+builder.Services.AddSingleton<INotificacao, NotificacaoRepository>();
 builder.Services.AddSingleton<TokenService>();
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

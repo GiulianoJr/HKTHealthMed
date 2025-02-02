@@ -8,9 +8,9 @@ namespace PROJ_HealthMed.Controllers
     [ApiController]
     public class AgendaController : ControllerBase
     {
-        private readonly IAgendaRepository _agendaRepository;
+        private readonly IAgenda _agendaRepository;
 
-        public AgendaController(IAgendaRepository agendaRepository)
+        public AgendaController(IAgenda agendaRepository)
         {
             _agendaRepository = agendaRepository;
         }

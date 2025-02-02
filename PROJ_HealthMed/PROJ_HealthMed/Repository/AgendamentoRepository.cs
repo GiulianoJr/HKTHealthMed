@@ -1,13 +1,11 @@
 ﻿using Dapper;
-using System.Data.SqlClient;
 using PROJ_HealthMed.Models;
 using PROJ_HealthMed.Interfaces;
 using System.Data;
-using System.Data.Common;
 
 namespace PROJ_HealthMed.Repository
 {
-    public class AgendamentoRepository : IAgendamentoRepository
+    public class AgendamentoRepository : IAgendamento
     {
         private readonly IDbConnection _dbConnection;
 

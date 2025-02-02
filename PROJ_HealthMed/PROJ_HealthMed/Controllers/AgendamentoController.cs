@@ -8,9 +8,9 @@ namespace PROJ_HealthMed.Controllers
     [ApiController]
     public class AgendamentoController : ControllerBase
     {
-        private readonly IAgendamentoRepository _agendamentoRepository;
+        private readonly IAgendamento _agendamentoRepository;
 
-        public AgendamentoController(IAgendamentoRepository agendamentoRepository)
+        public AgendamentoController(IAgendamento agendamentoRepository)
         {
             _agendamentoRepository = agendamentoRepository;
         }

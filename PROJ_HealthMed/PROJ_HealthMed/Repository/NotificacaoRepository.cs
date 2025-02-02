@@ -6,7 +6,7 @@ using System.Data;
 
 namespace PROJ_HealthMed.Repository
 {
-    public class NotificacaoRepository : INotificacaoRepository
+    public class NotificacaoRepository : INotificacao
     {
         private readonly IDbConnection _dbConnection;
 
@@ -17,7 +17,7 @@ namespace PROJ_HealthMed.Repository
 
         public async Task<int> AddNotificacao(Notificacao Notificacao)
         {
-            var sql = "INSERT INTO Notificacao (AgendamentoDR, StatusEnvio, DataEnvio, HoraEnvio) VALUES (@AgendamentoDR, @StatusEnvio, @DataEnvio, @HoraEnvio); SELECT CAST(SCOPE_IDENTITY() as int);";
+            var sql = "INSERT INTO Notificacao (AgendamentoDR, StatusEnvio, DataHoraEnvio, MedicoDR) VALUES (@AgendamentoDR, @StatusEnvio, @DataEnvio, @MedicoDR); SELECT CAST(SCOPE_IDENTITY() as int);";
             return _dbConnection.Execute(sql, Notificacao);
         
         }

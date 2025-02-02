@@ -1,6 +1,7 @@
 ﻿using PROJ_HealthMed.Models;
 using PROJ_HealthMed.Interfaces;
 using Microsoft.AspNetCore.Mvc;
+using PROJ_HealthMed.Repository;
 
 namespace PROJ_HealthMed.Controllers
 {
@@ -8,18 +9,73 @@ namespace PROJ_HealthMed.Controllers
     [ApiController]
     public class MedicoController : ControllerBase
     {
-        private readonly IUsuarioRepository _usuarioRepository;
+        private readonly IMedico _MedicoInterface;
+        private readonly TokenService _tokenService;
 
-        public MedicoController(IUsuarioRepository usuarioRepository)
+        public MedicoController(IMedico medicoInterface, TokenService tokenService)
         {
-            _usuarioRepository = usuarioRepository;
+            _MedicoInterface = medicoInterface;
+            _tokenService = tokenService;
+        }
+        
+        [HttpPost("Salvar")]
+        public async Task<IActionResult> SaveMedico([FromBody] Medico medico)
+        {
+            var id = await _MedicoInterface.AddMedico(medico);
+            return CreatedAtAction(nameof(GetMedicoById), new { id }, medico);
         }
 
-        [HttpGet("buscar")]
-        public async Task<ActionResult<IEnumerable<Usuario>>> GetMedicos()
+        [HttpGet("ConsultarPorId/{id}")]
+        public async Task<ActionResult<Medico>> GetMedicoById(int id)
         {
-            var medicos = await _usuarioRepository.GetMedicos();
+            var medico = await _MedicoInterface.GetMedicoById(id);
+
+            if (medico == null)
+            {
+                return NotFound();
+            }
+
+            return medico;
+        }
+
+        [HttpGet("BuscarTodos")]
+        public async Task<ActionResult<IEnumerable<Medico>>> GetMedicos()
+        {
+            var medicos = await _MedicoInterface.GetMedicos();
             return Ok(medicos);
+        }
+
+        [HttpPut("Atualizar/{id}")]
+        public async Task<IActionResult> UpdateMedico(int id, [FromBody] Medico medico)
+        {
+            medico.IdMedico = id;
+            var rowsAffected = await _MedicoInterface.UpdateMedico(medico);
+            if (rowsAffected == 0)
+            {
+                return NotFound();
+            }
+
+            return NoContent();
+        }
+
+        [HttpPost("Login")]
+        public async Task<IActionResult> Login([FromBody] LoginRequest loginRequest)
+        {
+            var medico = await _MedicoInterface.GetMedicoByEmailSenha(loginRequest.Email, loginRequest.Senha);
+
+            if (medico == null)
+            {
+                return Unauthorized();
+            }
+
+            var token = _tokenService.GenerateToken(medico.Email);
+            return Ok(new { Token = token });
         }
     }
 }
+public class LoginRequest
+{
+    public string Email { get; set; }
+    public string Senha { get; set; }
+}
+

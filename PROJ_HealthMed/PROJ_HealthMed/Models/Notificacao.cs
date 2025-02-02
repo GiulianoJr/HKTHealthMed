@@ -6,9 +6,9 @@ namespace PROJ_HealthMed.Models
     {
         [JsonIgnore]
         public int IdNotificacao { get; set; }
-        public int AgendamentoDR { get; set; }
-        public string StatusEnvio { get; set; }
-        public DateTime DataEnvio { get; set; }
-        public TimeSpan HoraEnvio { get; set; }
+        public required int AgendamentoDR { get; set; }
+        public required string StatusEnvio { get; set; }
+        public required int MedicoDR { get; set; }
+        public DateTime ?DataHoraEnvio { get; set; }
     }
 }

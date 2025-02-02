@@ -3,48 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\Giu_747\\Documents\\GitHub\\HKTHealthMed\\HKTHealthMed\\PROJ_HealthMed\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{598FB5F6-B74C-48CC-AA39-6C77F182AE7F}|PROJ_HealthMed\\PROJ_HealthMed.csproj|c:\\users\\giu_747\\documents\\github\\hkthealthmed\\hkthealthmed\\proj_healthmed\\proj_healthmed\\repository\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{598FB5F6-B74C-48CC-AA39-6C77F182AE7F}|PROJ_HealthMed\\PROJ_HealthMed.csproj|solutionrelative:proj_healthmed\\repository\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{598FB5F6-B74C-48CC-AA39-6C77F182AE7F}|PROJ_HealthMed\\PROJ_HealthMed.csproj|c:\\users\\giu_747\\documents\\github\\hkthealthmed\\hkthealthmed\\proj_healthmed\\proj_healthmed\\controllers\\notificacaocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{598FB5F6-B74C-48CC-AA39-6C77F182AE7F}|PROJ_HealthMed\\PROJ_HealthMed.csproj|solutionrelative:proj_healthmed\\controllers\\notificacaocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{598FB5F6-B74C-48CC-AA39-6C77F182AE7F}|PROJ_HealthMed\\PROJ_HealthMed.csproj|c:\\users\\giu_747\\documents\\github\\hkthealthmed\\hkthealthmed\\proj_healthmed\\proj_healthmed\\interfaces\\iagendamentorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{598FB5F6-B74C-48CC-AA39-6C77F182AE7F}|PROJ_HealthMed\\PROJ_HealthMed.csproj|solutionrelative:proj_healthmed\\interfaces\\iagendamentorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{598FB5F6-B74C-48CC-AA39-6C77F182AE7F}|PROJ_HealthMed\\PROJ_HealthMed.csproj|c:\\users\\giu_747\\documents\\github\\hkthealthmed\\hkthealthmed\\proj_healthmed\\proj_healthmed\\controllers\\agendamentocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{598FB5F6-B74C-48CC-AA39-6C77F182AE7F}|PROJ_HealthMed\\PROJ_HealthMed.csproj|solutionrelative:proj_healthmed\\controllers\\agendamentocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{598FB5F6-B74C-48CC-AA39-6C77F182AE7F}|PROJ_HealthMed\\PROJ_HealthMed.csproj|c:\\users\\giu_747\\documents\\github\\hkthealthmed\\hkthealthmed\\proj_healthmed\\proj_healthmed\\controllers\\agendacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{598FB5F6-B74C-48CC-AA39-6C77F182AE7F}|PROJ_HealthMed\\PROJ_HealthMed.csproj|solutionrelative:proj_healthmed\\controllers\\agendacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{598FB5F6-B74C-48CC-AA39-6C77F182AE7F}|PROJ_HealthMed\\PROJ_HealthMed.csproj|c:\\users\\giu_747\\documents\\github\\hkthealthmed\\hkthealthmed\\proj_healthmed\\proj_healthmed\\repository\\agendamentorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{598FB5F6-B74C-48CC-AA39-6C77F182AE7F}|PROJ_HealthMed\\PROJ_HealthMed.csproj|solutionrelative:proj_healthmed\\repository\\agendamentorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{598FB5F6-B74C-48CC-AA39-6C77F182AE7F}|PROJ_HealthMed\\PROJ_HealthMed.csproj|c:\\users\\giu_747\\documents\\github\\hkthealthmed\\hkthealthmed\\proj_healthmed\\proj_healthmed\\models\\agenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{598FB5F6-B74C-48CC-AA39-6C77F182AE7F}|PROJ_HealthMed\\PROJ_HealthMed.csproj|solutionrelative:proj_healthmed\\models\\agenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{598FB5F6-B74C-48CC-AA39-6C77F182AE7F}|PROJ_HealthMed\\PROJ_HealthMed.csproj|c:\\users\\giu_747\\documents\\github\\hkthealthmed\\hkthealthmed\\proj_healthmed\\proj_healthmed\\models\\agendamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{598FB5F6-B74C-48CC-AA39-6C77F182AE7F}|PROJ_HealthMed\\PROJ_HealthMed.csproj|solutionrelative:proj_healthmed\\models\\agendamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{598FB5F6-B74C-48CC-AA39-6C77F182AE7F}|PROJ_HealthMed\\PROJ_HealthMed.csproj|c:\\users\\giu_747\\documents\\github\\hkthealthmed\\hkthealthmed\\proj_healthmed\\proj_healthmed\\models\\notificacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{598FB5F6-B74C-48CC-AA39-6C77F182AE7F}|PROJ_HealthMed\\PROJ_HealthMed.csproj|solutionrelative:proj_healthmed\\models\\notificacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{598FB5F6-B74C-48CC-AA39-6C77F182AE7F}|PROJ_HealthMed\\PROJ_HealthMed.csproj|c:\\users\\giu_747\\documents\\github\\hkthealthmed\\hkthealthmed\\proj_healthmed\\proj_healthmed\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{598FB5F6-B74C-48CC-AA39-6C77F182AE7F}|PROJ_HealthMed\\PROJ_HealthMed.csproj|solutionrelative:proj_healthmed\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{598FB5F6-B74C-48CC-AA39-6C77F182AE7F}|PROJ_HealthMed\\PROJ_HealthMed.csproj|c:\\users\\giu_747\\documents\\github\\hkthealthmed\\hkthealthmed\\proj_healthmed\\proj_healthmed\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{598FB5F6-B74C-48CC-AA39-6C77F182AE7F}|PROJ_HealthMed\\PROJ_HealthMed.csproj|solutionrelative:proj_healthmed\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{598FB5F6-B74C-48CC-AA39-6C77F182AE7F}|PROJ_HealthMed\\PROJ_HealthMed.csproj|c:\\users\\giu_747\\documents\\github\\hkthealthmed\\hkthealthmed\\proj_healthmed\\proj_healthmed\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{598FB5F6-B74C-48CC-AA39-6C77F182AE7F}|PROJ_HealthMed\\PROJ_HealthMed.csproj|solutionrelative:proj_healthmed\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{598FB5F6-B74C-48CC-AA39-6C77F182AE7F}|PROJ_HealthMed\\PROJ_HealthMed.csproj|c:\\users\\giu_747\\documents\\github\\hkthealthmed\\hkthealthmed\\proj_healthmed\\proj_healthmed\\repository\\notificacaorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{598FB5F6-B74C-48CC-AA39-6C77F182AE7F}|PROJ_HealthMed\\PROJ_HealthMed.csproj|solutionrelative:proj_healthmed\\repository\\notificacaorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{598FB5F6-B74C-48CC-AA39-6C77F182AE7F}|PROJ_HealthMed\\PROJ_HealthMed.csproj|c:\\users\\giu_747\\documents\\github\\hkthealthmed\\hkthealthmed\\proj_healthmed\\proj_healthmed\\repository\\agendarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{598FB5F6-B74C-48CC-AA39-6C77F182AE7F}|PROJ_HealthMed\\PROJ_HealthMed.csproj|solutionrelative:proj_healthmed\\repository\\agendarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{598FB5F6-B74C-48CC-AA39-6C77F182AE7F}|PROJ_HealthMed\\PROJ_HealthMed.csproj|c:\\users\\giu_747\\documents\\github\\hkthealthmed\\hkthealthmed\\proj_healthmed\\proj_healthmed\\models\\notificacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{598FB5F6-B74C-48CC-AA39-6C77F182AE7F}|PROJ_HealthMed\\PROJ_HealthMed.csproj|solutionrelative:proj_healthmed\\models\\notificacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{598FB5F6-B74C-48CC-AA39-6C77F182AE7F}|PROJ_HealthMed\\PROJ_HealthMed.csproj|c:\\users\\giu_747\\documents\\github\\hkthealthmed\\hkthealthmed\\proj_healthmed\\proj_healthmed\\interfaces\\inotificacaorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{598FB5F6-B74C-48CC-AA39-6C77F182AE7F}|PROJ_HealthMed\\PROJ_HealthMed.csproj|solutionrelative:proj_healthmed\\interfaces\\inotificacaorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{598FB5F6-B74C-48CC-AA39-6C77F182AE7F}|PROJ_HealthMed\\PROJ_HealthMed.csproj|c:\\users\\giu_747\\documents\\github\\hkthealthmed\\hkthealthmed\\proj_healthmed\\proj_healthmed\\interfaces\\inotificacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{598FB5F6-B74C-48CC-AA39-6C77F182AE7F}|PROJ_HealthMed\\PROJ_HealthMed.csproj|solutionrelative:proj_healthmed\\interfaces\\inotificacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -67,66 +55,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "IAgendamentoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Giu_747\\Documents\\GitHub\\HKTHealthMed\\HKTHealthMed\\PROJ_HealthMed\\PROJ_HealthMed\\Interfaces\\IAgendamentoRepository.cs",
-              "RelativeDocumentMoniker": "PROJ_HealthMed\\Interfaces\\IAgendamentoRepository.cs",
-              "ToolTip": "C:\\Users\\Giu_747\\Documents\\GitHub\\HKTHealthMed\\HKTHealthMed\\PROJ_HealthMed\\PROJ_HealthMed\\Interfaces\\IAgendamentoRepository.cs",
-              "RelativeToolTip": "PROJ_HealthMed\\Interfaces\\IAgendamentoRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "AgendamentoController.cs",
+              "DocumentMoniker": "C:\\Users\\Giu_747\\Documents\\GitHub\\HKTHealthMed\\HKTHealthMed\\PROJ_HealthMed\\PROJ_HealthMed\\Controllers\\AgendamentoController.cs",
+              "RelativeDocumentMoniker": "PROJ_HealthMed\\Controllers\\AgendamentoController.cs",
+              "ToolTip": "C:\\Users\\Giu_747\\Documents\\GitHub\\HKTHealthMed\\HKTHealthMed\\PROJ_HealthMed\\PROJ_HealthMed\\Controllers\\AgendamentoController.cs",
+              "RelativeToolTip": "PROJ_HealthMed\\Controllers\\AgendamentoController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAnwAoAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T21:38:37.7Z",
+              "WhenOpened": "2025-02-02T23:51:37.384Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UsuarioRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Giu_747\\Documents\\GitHub\\HKTHealthMed\\HKTHealthMed\\PROJ_HealthMed\\PROJ_HealthMed\\Repository\\UsuarioRepository.cs",
-              "RelativeDocumentMoniker": "PROJ_HealthMed\\Repository\\UsuarioRepository.cs",
-              "ToolTip": "C:\\Users\\Giu_747\\Documents\\GitHub\\HKTHealthMed\\HKTHealthMed\\PROJ_HealthMed\\PROJ_HealthMed\\Repository\\UsuarioRepository.cs",
-              "RelativeToolTip": "PROJ_HealthMed\\Repository\\UsuarioRepository.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAcwCwAAAA8AAAAAAAAAA==",
+              "Title": "NotificacaoController.cs",
+              "DocumentMoniker": "C:\\Users\\Giu_747\\Documents\\GitHub\\HKTHealthMed\\HKTHealthMed\\PROJ_HealthMed\\PROJ_HealthMed\\Controllers\\NotificacaoController.cs",
+              "RelativeDocumentMoniker": "PROJ_HealthMed\\Controllers\\NotificacaoController.cs",
+              "ToolTip": "C:\\Users\\Giu_747\\Documents\\GitHub\\HKTHealthMed\\HKTHealthMed\\PROJ_HealthMed\\PROJ_HealthMed\\Controllers\\NotificacaoController.cs",
+              "RelativeToolTip": "PROJ_HealthMed\\Controllers\\NotificacaoController.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAApwEEAAABzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T21:23:05.652Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Notificacao.cs",
-              "DocumentMoniker": "C:\\Users\\Giu_747\\Documents\\GitHub\\HKTHealthMed\\HKTHealthMed\\PROJ_HealthMed\\PROJ_HealthMed\\Models\\Notificacao.cs",
-              "RelativeDocumentMoniker": "PROJ_HealthMed\\Models\\Notificacao.cs",
-              "ToolTip": "C:\\Users\\Giu_747\\Documents\\GitHub\\HKTHealthMed\\HKTHealthMed\\PROJ_HealthMed\\PROJ_HealthMed\\Models\\Notificacao.cs",
-              "RelativeToolTip": "PROJ_HealthMed\\Models\\Notificacao.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T21:28:47.395Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Agendamento.cs",
-              "DocumentMoniker": "C:\\Users\\Giu_747\\Documents\\GitHub\\HKTHealthMed\\HKTHealthMed\\PROJ_HealthMed\\PROJ_HealthMed\\Models\\Agendamento.cs",
-              "RelativeDocumentMoniker": "PROJ_HealthMed\\Models\\Agendamento.cs",
-              "ToolTip": "C:\\Users\\Giu_747\\Documents\\GitHub\\HKTHealthMed\\HKTHealthMed\\PROJ_HealthMed\\PROJ_HealthMed\\Models\\Agendamento.cs",
-              "RelativeToolTip": "PROJ_HealthMed\\Models\\Agendamento.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T21:28:54.406Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Agenda.cs",
-              "DocumentMoniker": "C:\\Users\\Giu_747\\Documents\\GitHub\\HKTHealthMed\\HKTHealthMed\\PROJ_HealthMed\\PROJ_HealthMed\\Models\\Agenda.cs",
-              "RelativeDocumentMoniker": "PROJ_HealthMed\\Models\\Agenda.cs",
-              "ToolTip": "C:\\Users\\Giu_747\\Documents\\GitHub\\HKTHealthMed\\HKTHealthMed\\PROJ_HealthMed\\PROJ_HealthMed\\Models\\Agenda.cs",
-              "RelativeToolTip": "PROJ_HealthMed\\Models\\Agenda.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T21:28:58.114Z",
+              "WhenOpened": "2025-02-02T23:51:25.047Z",
               "EditorCaption": ""
             },
             {
@@ -137,74 +86,74 @@
               "RelativeDocumentMoniker": "PROJ_HealthMed\\Controllers\\AgendaController.cs",
               "ToolTip": "C:\\Users\\Giu_747\\Documents\\GitHub\\HKTHealthMed\\HKTHealthMed\\PROJ_HealthMed\\PROJ_HealthMed\\Controllers\\AgendaController.cs",
               "RelativeToolTip": "PROJ_HealthMed\\Controllers\\AgendaController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAAvwAwAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T21:29:07.429Z",
+              "WhenOpened": "2025-02-02T23:51:13.287Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Usuario.cs",
-              "DocumentMoniker": "C:\\Users\\Giu_747\\Documents\\GitHub\\HKTHealthMed\\HKTHealthMed\\PROJ_HealthMed\\PROJ_HealthMed\\Models\\Usuario.cs",
-              "RelativeDocumentMoniker": "PROJ_HealthMed\\Models\\Usuario.cs",
-              "ToolTip": "C:\\Users\\Giu_747\\Documents\\GitHub\\HKTHealthMed\\HKTHealthMed\\PROJ_HealthMed\\PROJ_HealthMed\\Models\\Usuario.cs",
-              "RelativeToolTip": "PROJ_HealthMed\\Models\\Usuario.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T21:28:19.975Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AgendamentoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Giu_747\\Documents\\GitHub\\HKTHealthMed\\HKTHealthMed\\PROJ_HealthMed\\PROJ_HealthMed\\Repository\\AgendamentoRepository.cs",
-              "RelativeDocumentMoniker": "PROJ_HealthMed\\Repository\\AgendamentoRepository.cs",
-              "ToolTip": "C:\\Users\\Giu_747\\Documents\\GitHub\\HKTHealthMed\\HKTHealthMed\\PROJ_HealthMed\\PROJ_HealthMed\\Repository\\AgendamentoRepository.cs",
-              "RelativeToolTip": "PROJ_HealthMed\\Repository\\AgendamentoRepository.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAowB0AAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T21:19:42.548Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "UsuarioController.cs",
-              "DocumentMoniker": "C:\\Users\\Giu_747\\Documents\\GitHub\\HKTHealthMed\\HKTHealthMed\\PROJ_HealthMed\\PROJ_HealthMed\\Controllers\\UsuarioController.cs",
-              "RelativeDocumentMoniker": "PROJ_HealthMed\\Controllers\\UsuarioController.cs",
-              "ToolTip": "C:\\Users\\Giu_747\\Documents\\GitHub\\HKTHealthMed\\HKTHealthMed\\PROJ_HealthMed\\PROJ_HealthMed\\Controllers\\UsuarioController.cs",
-              "RelativeToolTip": "PROJ_HealthMed\\Controllers\\UsuarioController.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAAAcwB4AAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T21:29:15.418Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 4,
               "Title": "NotificacaoRepository.cs",
               "DocumentMoniker": "C:\\Users\\Giu_747\\Documents\\GitHub\\HKTHealthMed\\HKTHealthMed\\PROJ_HealthMed\\PROJ_HealthMed\\Repository\\NotificacaoRepository.cs",
               "RelativeDocumentMoniker": "PROJ_HealthMed\\Repository\\NotificacaoRepository.cs",
               "ToolTip": "C:\\Users\\Giu_747\\Documents\\GitHub\\HKTHealthMed\\HKTHealthMed\\PROJ_HealthMed\\PROJ_HealthMed\\Repository\\NotificacaoRepository.cs",
               "RelativeToolTip": "PROJ_HealthMed\\Repository\\NotificacaoRepository.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAADwvxwAAABcAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T21:21:12.296Z",
+              "WhenOpened": "2025-02-02T23:50:22.565Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AgendaRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Giu_747\\Documents\\GitHub\\HKTHealthMed\\HKTHealthMed\\PROJ_HealthMed\\PROJ_HealthMed\\Repository\\AgendaRepository.cs",
-              "RelativeDocumentMoniker": "PROJ_HealthMed\\Repository\\AgendaRepository.cs",
-              "ToolTip": "C:\\Users\\Giu_747\\Documents\\GitHub\\HKTHealthMed\\HKTHealthMed\\PROJ_HealthMed\\PROJ_HealthMed\\Repository\\AgendaRepository.cs",
-              "RelativeToolTip": "PROJ_HealthMed\\Repository\\AgendaRepository.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAowBoAAAALAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "Notificacao.cs",
+              "DocumentMoniker": "C:\\Users\\Giu_747\\Documents\\GitHub\\HKTHealthMed\\HKTHealthMed\\PROJ_HealthMed\\PROJ_HealthMed\\Models\\Notificacao.cs",
+              "RelativeDocumentMoniker": "PROJ_HealthMed\\Models\\Notificacao.cs",
+              "ToolTip": "C:\\Users\\Giu_747\\Documents\\GitHub\\HKTHealthMed\\HKTHealthMed\\PROJ_HealthMed\\PROJ_HealthMed\\Models\\Notificacao.cs",
+              "RelativeToolTip": "PROJ_HealthMed\\Models\\Notificacao.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T21:19:50.197Z",
+              "WhenOpened": "2025-02-02T23:50:17.96Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "INotificacaoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Giu_747\\Documents\\GitHub\\HKTHealthMed\\HKTHealthMed\\PROJ_HealthMed\\PROJ_HealthMed\\Interfaces\\INotificacaoRepository.cs",
+              "RelativeDocumentMoniker": "PROJ_HealthMed\\Interfaces\\INotificacaoRepository.cs",
+              "ToolTip": "C:\\Users\\Giu_747\\Documents\\GitHub\\HKTHealthMed\\HKTHealthMed\\PROJ_HealthMed\\PROJ_HealthMed\\Interfaces\\INotificacaoRepository.cs",
+              "RelativeToolTip": "PROJ_HealthMed\\Interfaces\\INotificacaoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-02T23:50:10.776Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "INotificacao.cs",
+              "DocumentMoniker": "C:\\Users\\Giu_747\\Documents\\GitHub\\HKTHealthMed\\HKTHealthMed\\PROJ_HealthMed\\PROJ_HealthMed\\Interfaces\\INotificacao.cs",
+              "RelativeDocumentMoniker": "PROJ_HealthMed\\Interfaces\\INotificacao.cs",
+              "ToolTip": "C:\\Users\\Giu_747\\Documents\\GitHub\\HKTHealthMed\\HKTHealthMed\\PROJ_HealthMed\\PROJ_HealthMed\\Interfaces\\INotificacao.cs",
+              "RelativeToolTip": "PROJ_HealthMed\\Interfaces\\INotificacao.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-02T23:49:53.863Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Giu_747\\Documents\\GitHub\\HKTHealthMed\\HKTHealthMed\\PROJ_HealthMed\\PROJ_HealthMed\\Program.cs",
+              "RelativeDocumentMoniker": "PROJ_HealthMed\\Program.cs",
+              "ToolTip": "C:\\Users\\Giu_747\\Documents\\GitHub\\HKTHealthMed\\HKTHealthMed\\PROJ_HealthMed\\PROJ_HealthMed\\Program.cs",
+              "RelativeToolTip": "PROJ_HealthMed\\Program.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACcAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-02T23:49:31.911Z",
               "EditorCaption": ""
             }
           ]

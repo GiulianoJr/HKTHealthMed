@@ -10,9 +10,9 @@ namespace PROJ_HealthMed.Controllers
     [ApiController]
     public class NotificacaoController : ControllerBase
     {
-        private readonly INotificacaoRepository _notificacaoRepository;
+        private readonly INotificacao _notificacaoRepository;
 
-        public NotificacaoController(INotificacaoRepository notificacaoRepository)
+        public NotificacaoController(INotificacao notificacaoRepository)
         {
             _notificacaoRepository = notificacaoRepository;
         }
@@ -63,7 +63,7 @@ namespace PROJ_HealthMed.Controllers
                 var toAddress = new MailAddress("giulianojr@gmail.com", "Destinatário");
                 const string fromPassword = "Fusion@211296";
                 const string subject = "Notificação";
-                string body = $"Status: {notificacao.StatusEnvio}\nData de Envio: {notificacao.DataEnvio}\nHora de Envio: {notificacao.HoraEnvio}";
+                string body = $"Status: {notificacao.StatusEnvio}\nDataHora de Envio: {notificacao.DataHoraEnvio}\n";
 
                 var smtp = new SmtpClient
                 {

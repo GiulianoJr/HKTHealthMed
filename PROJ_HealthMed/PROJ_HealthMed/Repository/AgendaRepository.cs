@@ -6,7 +6,7 @@ using System.Data;
 
 namespace PROJ_HealthMed.Repository
 {
-    public class AgendaRepository : IAgendaRepository
+    public class AgendaRepository : IAgenda
     {
         private readonly IDbConnection _dbConnection;
 
