@@ -1,0 +1,48 @@
+
+docker pull mcr.microsoft.com/mssql/server:2019-latest
+docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=@Hackathon2025' -p 1433:1433 --name sql_server_contain
+er -d mcr.microsoft.com/mssql/server:2019-latest
+
+CREATE TABLE Usuario (
+    IdUsuario INT PRIMARY KEY IDENTITY(1,1),
+    Nome VARCHAR(255) NOT NULL,
+    CPF VARCHAR(11) NOT NULL UNIQUE,
+    CRM VARCHAR(20) NOT NULL UNIQUE,
+    Email VARCHAR(255) NOT NULL UNIQUE,
+    Senha VARCHAR(255) NOT NULL,
+    TipoUsuario VARCHAR(50),
+    DataInicio DATE,
+    DataFim DATE
+);
+
+
+
+CREATE TABLE Agenda (
+    IdAgenda INT PRIMARY KEY IDENTITY(1,1),
+    MedicoDR INT,
+    Data DATE NOT NULL,
+    Hora TIME NOT NULL,
+    Duracao INT,
+    Tipo VARCHAR(50),
+    FOREIGN KEY (MedicoDR) REFERENCES Usuario(IdUsuario)
+);
+
+
+CREATE TABLE Agendamento (
+    IdAgendamento INT PRIMARY KEY IDENTITY(1,1),
+    AgendaDR INT,
+    PacienteDR INT,
+    StatusAgendamento VARCHAR(50),
+    FOREIGN KEY (AgendaDR) REFERENCES Agenda(IdAgenda),
+    FOREIGN KEY (PacienteDR) REFERENCES Usuario(IdUsuario)
+);
+
+
+CREATE TABLE Notificacao (
+    IdNotificacao INT PRIMARY KEY IDENTITY(1,1),
+    AgendamentoDR INT,
+    StatusEnvio VARCHAR(50),
+    DataEnvio DATE NOT NULL,
+    HoraEnvio TIME NOT NULL,
+    FOREIGN KEY (AgendamentoDR) REFERENCES Agendamento(IdAgendamento)
+);
