@@ -61,7 +61,7 @@ namespace PROJ_HealthMed.Controllers
             {
                 var fromAddress = new MailAddress("giulianojr@outlook.com", "Giuliano Reis Junior");
                 var toAddress = new MailAddress("giulianojr@gmail.com", "Destinatário");
-                const string fromPassword = "Fusion@211296";
+                const string fromPassword = "okok";
                 const string subject = "Notificação";
                 string body = $"Status: {notificacao.StatusEnvio}\nDataHora de Envio: {notificacao.DataHoraEnvio}\n";
 
