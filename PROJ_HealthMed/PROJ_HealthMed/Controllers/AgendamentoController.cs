@@ -34,5 +34,19 @@ namespace PROJ_HealthMed.Controllers
 
             return agendamento;
         }
+
+        [HttpPut("Cancelar/{IdAgendamento}")]
+
+        public async Task<IActionResult> CancelarAgendamento(int IdAgendamento, [FromBody] MtvCanc mtvCanc)
+        {
+            var agendamento = await _agendamentoRepository.CancelarAgendamento(IdAgendamento, mtvCanc.MotivoCancelamento);
+            return Ok();  
+        }
     }
+
+    public class MtvCanc
+    {
+        public required string MotivoCancelamento { get; set; }
+    }
+
 }

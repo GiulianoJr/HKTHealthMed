@@ -1,4 +1,5 @@
-﻿using PROJ_HealthMed.Models;
+﻿using PROJ_HealthMed.Controllers;
+using PROJ_HealthMed.Models;
 
 namespace PROJ_HealthMed.Interfaces
 {
@@ -6,5 +7,6 @@ namespace PROJ_HealthMed.Interfaces
     {
         Task<int> AddAgendamento(Agendamento agendamento);
         Task<Agendamento> GetAgendamentoById(int id);
+        Task<int> CancelarAgendamento(int IdAgendamento, string mtvCanc);
     }
 }

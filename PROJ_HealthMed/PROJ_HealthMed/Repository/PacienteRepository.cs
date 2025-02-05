@@ -25,11 +25,24 @@ namespace PROJ_HealthMed.Repository
             return _dbConnection.Execute(sql, paciente);
         }
 
-        public async Task<Paciente> GetPacienteByEmailSenha(string email, string senha)
+        public async Task<Paciente> GetPacienteByEmailCPFSenha(string email, string senha, string CPF)
         {
-            var sql = "SELECT * FROM Paciente WHERE Email = @Email AND Senha = @Senha";
-            return _dbConnection.Query<Paciente>(sql, new { Email = email, Senha = senha }).SingleOrDefault();
+            var sql = "";
+            var retorno = "";
 
+            if (CPF == null)
+            {
+                sql = "SELECT * FROM Paciente WHERE Email = @Email AND Senha = @Senha";
+                return _dbConnection.Query<Paciente>(sql, new { Email = email, Senha = senha }).SingleOrDefault();
+
+            }
+            else
+            {
+                sql = "SELECT * FROM Paciente WHERE CPF = @CPF AND Senha = @Senha";
+                return _dbConnection.Query<Paciente>(sql, new { CPF = CPF, Senha = senha }).SingleOrDefault();
+            }
+            
+          
         }
 
         public async Task<Paciente> GetPacienteById(int id)

@@ -38,7 +38,6 @@ builder.Services.AddSingleton<IPaciente, PacienteRepository>();
 builder.Services.AddSingleton<IMedico, MedicoRepository>();
 builder.Services.AddSingleton<IAgenda, AgendaRepository>();
 builder.Services.AddSingleton<IAgendamento, AgendamentoRepository>();
-builder.Services.AddSingleton<INotificacao, NotificacaoRepository>();
 builder.Services.AddSingleton<TokenService>();
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

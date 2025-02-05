@@ -4,7 +4,6 @@ namespace PROJ_HealthMed.Models
 {
     public class Paciente
     {
-        [JsonIgnore]
         public int IdPaciente { get; set; }
         public required string Nome { get; set; }
         public required string CPF { get; set; }

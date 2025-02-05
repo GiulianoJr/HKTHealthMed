@@ -6,5 +6,8 @@ namespace PROJ_HealthMed.Interfaces
     {
         Task<int> AddAgenda(Agenda agenda);
         Task<Agenda> GetAgendaById(int id);
+        Task<IEnumerable<Agenda>> GetAgendaByMedico(int IdMedico);
+        Task<int> DeleteAgenda(int IdAgenda);
+        Task<int> UpdateAgenda(Agenda agenda);
     }
 }

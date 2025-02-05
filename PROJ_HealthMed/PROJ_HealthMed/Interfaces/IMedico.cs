@@ -7,7 +7,10 @@ namespace PROJ_HealthMed.Interfaces
         Task<int> AddMedico(Medico medico);
         Task<int> UpdateMedico(Medico medico);
         Task<Medico> GetMedicoById(int id);
-        Task<Medico> GetMedicoByEmailSenha(string email, string senha);
+        Task<Medico> GetMedicoByCRMSenha(string crm, string senha);
         Task<IEnumerable<Medico>> GetMedicos();
+        Task<IEnumerable<Medico>> GetMedicosBySpec(string Spec);
+        Task<IEnumerable<Agendamento>> GetAgendamentoPendente(int IdMedico);
+        Task<int> AceiteAgendamento(int IdAgendamento, bool Aceite);
     }
 }

@@ -7,7 +7,7 @@ namespace PROJ_HealthMed.Interfaces
         Task<int> AddPaciente(Paciente paciente);
         Task<int> UpdatePaciente(Paciente paciente);
         Task<Paciente> GetPacienteById(int id);
-        Task<Paciente> GetPacienteByEmailSenha(string email, string senha);
+        Task<Paciente> GetPacienteByEmailCPFSenha(string email, string senha, string CPF);
         Task<IEnumerable<Paciente>> GetPacientes();
     }
 }

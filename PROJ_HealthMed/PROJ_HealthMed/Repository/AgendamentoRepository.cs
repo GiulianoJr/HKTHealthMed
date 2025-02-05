@@ -16,7 +16,8 @@ namespace PROJ_HealthMed.Repository
 
         public async Task<int> AddAgendamento(Agendamento agendamento)
         {
-            var sql = "INSERT INTO Agendamento (AgendaDR, PacienteDR, StatusAgendamento) VALUES (@AgendaDR, @PacienteDR, @StatusAgendamento); SELECT CAST(SCOPE_IDENTITY() as int);";
+            agendamento.StatusAgendamento = "Pendente";
+            var sql = "INSERT INTO Agendamento (AgendaDR, PacienteDR, MedicoDR, StatusAgendamento) VALUES (@AgendaDR, @PacienteDR, @MedicoDR, @StatusAgendamento); SELECT CAST(SCOPE_IDENTITY() as int);";
 
             return _dbConnection.Execute(sql,agendamento);
             
@@ -26,6 +27,20 @@ namespace PROJ_HealthMed.Repository
         {
             var sql = "SELECT * FROM Agendamento WHERE IdAgendamento = @Id";
             return _dbConnection.Query<Agendamento>(sql, new { Id = id }).SingleOrDefault();
+        }
+
+        public async Task<int> CancelarAgendamento(int IdAgendamento, string mtvCanc)
+        {
+            var sqlA = "SELECT * FROM Agendamento WHERE IdAgendamento = @Id";
+            Agendamento agendamento = _dbConnection.Query<Agendamento>(sqlA, new { Id = IdAgendamento }).SingleOrDefault();
+
+            int IdAgenda = agendamento.AgendaDR;
+
+            var sqlB = "update Agenda set StatusAgenda = 'Disponivel' where IdAgenda = @IdAgenda";
+            var ok = _dbConnection.Execute(sqlB, new { mtvCanc = mtvCanc, IdAgenda = IdAgenda});
+          
+            var sql = "UPDATE Agendamento Set MotivoCancelamento = @mtvCanc, StatusAgendamento = 'Cancelado' where IdAgendamento = @IdAgendamento";
+            return _dbConnection.Execute(sql, new { mtvCanc= mtvCanc, IdAgendamento = IdAgendamento });
         }
     }
 }

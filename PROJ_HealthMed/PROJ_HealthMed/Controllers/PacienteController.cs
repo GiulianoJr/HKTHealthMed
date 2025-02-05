@@ -58,17 +58,30 @@ namespace PROJ_HealthMed.Controllers
         }
 
         [HttpPost("Login")]
-        public async Task<IActionResult> Login([FromBody] LoginRequest loginRequest)
+        public async Task<IActionResult> Login([FromBody] LoginPacienteRequest loginPacienteRequest)
         {
-            var paciente = await _PacienteInterface.GetPacienteByEmailSenha(loginRequest.Email, loginRequest.Senha);
+            if ((loginPacienteRequest.CPF==null) & (loginPacienteRequest.Email == null))
+            {
+                return BadRequest();
+            }
+
+            var paciente = await _PacienteInterface.GetPacienteByEmailCPFSenha(loginPacienteRequest.Email, loginPacienteRequest.Senha, loginPacienteRequest.CPF);
 
             if (paciente == null)
             {
                 return Unauthorized();
             }
 
-            var token = _tokenService.GenerateToken(paciente.Email);
+            var token = _tokenService.GenerateTokenPaciente(paciente.Email);
             return Ok(new { Token = token });
         }
+
+        public class LoginPacienteRequest
+        {
+            public string ?Email { get; set; }
+            public string ?CPF { get; set; }
+            public required string Senha { get; set; }
+        }
+
     }
 }
