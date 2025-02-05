@@ -3,16 +3,21 @@ docker pull mcr.microsoft.com/mssql/server:2019-latest
 docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=@Hackathon2025' -p 1433:1433 --name sql_server_contain
 er -d mcr.microsoft.com/mssql/server:2019-latest
 
-CREATE TABLE Usuario (
-    IdUsuario INT PRIMARY KEY IDENTITY(1,1),
+CREATE TABLE Paciente (
+    IdPaciente INT PRIMARY KEY IDENTITY(1,1),
+    Nome VARCHAR(255) NOT NULL,
+    CPF VARCHAR(11) NOT NULL UNIQUE,
+    Email VARCHAR(255) NOT NULL UNIQUE,
+    Senha VARCHAR(255) NOT NULL,
+);
+
+CREATE TABLE Medico (
+    IdMedico INT PRIMARY KEY IDENTITY(1,1),
     Nome VARCHAR(255) NOT NULL,
     CPF VARCHAR(11) NOT NULL UNIQUE,
     CRM VARCHAR(20) NOT NULL UNIQUE,
     Email VARCHAR(255) NOT NULL UNIQUE,
-    Senha VARCHAR(255) NOT NULL,
-    TipoUsuario VARCHAR(50),
-    DataInicio DATE,
-    DataFim DATE
+    Senha VARCHAR(255) NOT NULL
 );
 
 
@@ -20,11 +25,10 @@ CREATE TABLE Usuario (
 CREATE TABLE Agenda (
     IdAgenda INT PRIMARY KEY IDENTITY(1,1),
     MedicoDR INT,
-    Data DATE NOT NULL,
-    Hora TIME NOT NULL,
+    Data DATETIME NOT NULL,
     Duracao INT,
     Tipo VARCHAR(50),
-    FOREIGN KEY (MedicoDR) REFERENCES Usuario(IdUsuario)
+    FOREIGN KEY (MedicoDR) REFERENCES Medico(IdMedico)
 );
 
 
@@ -34,7 +38,7 @@ CREATE TABLE Agendamento (
     PacienteDR INT,
     StatusAgendamento VARCHAR(50),
     FOREIGN KEY (AgendaDR) REFERENCES Agenda(IdAgenda),
-    FOREIGN KEY (PacienteDR) REFERENCES Usuario(IdUsuario)
+    FOREIGN KEY (PacienteDR) REFERENCES Paciente(IdPaciente)
 );
 
 
@@ -42,7 +46,8 @@ CREATE TABLE Notificacao (
     IdNotificacao INT PRIMARY KEY IDENTITY(1,1),
     AgendamentoDR INT,
     StatusEnvio VARCHAR(50),
-    DataEnvio DATE NOT NULL,
-    HoraEnvio TIME NOT NULL,
-    FOREIGN KEY (AgendamentoDR) REFERENCES Agendamento(IdAgendamento)
+	MedicoDR INT,
+    DataHoraEnvio DATETIME NOT NULL,
+    FOREIGN KEY (AgendamentoDR) REFERENCES Agendamento(IdAgendamento),
+	FOREIGN KEY (MedicoDR) REFERENCES Medico(IdMedico)
 );
