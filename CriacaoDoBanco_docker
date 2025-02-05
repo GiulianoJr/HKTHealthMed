@@ -17,7 +17,9 @@ CREATE TABLE Medico (
     CPF VARCHAR(11) NOT NULL UNIQUE,
     CRM VARCHAR(20) NOT NULL UNIQUE,
     Email VARCHAR(255) NOT NULL UNIQUE,
-    Senha VARCHAR(255) NOT NULL
+    Senha VARCHAR(255) NOT NULL,
+	Especialidade VARCHAR(255) NOT NULL,
+	ValorConsulta VARCHAR(255) NOT NULL
 );
 
 
@@ -25,6 +27,7 @@ CREATE TABLE Medico (
 CREATE TABLE Agenda (
     IdAgenda INT PRIMARY KEY IDENTITY(1,1),
     MedicoDR INT,
+	StatusAgenda varchar(255),
     Data DATETIME NOT NULL,
     Duracao INT,
     Tipo VARCHAR(50),
@@ -36,18 +39,10 @@ CREATE TABLE Agendamento (
     IdAgendamento INT PRIMARY KEY IDENTITY(1,1),
     AgendaDR INT,
     PacienteDR INT,
-    StatusAgendamento VARCHAR(50),
-    FOREIGN KEY (AgendaDR) REFERENCES Agenda(IdAgenda),
-    FOREIGN KEY (PacienteDR) REFERENCES Paciente(IdPaciente)
-);
-
-
-CREATE TABLE Notificacao (
-    IdNotificacao INT PRIMARY KEY IDENTITY(1,1),
-    AgendamentoDR INT,
-    StatusEnvio VARCHAR(50),
 	MedicoDR INT,
-    DataHoraEnvio DATETIME NOT NULL,
-    FOREIGN KEY (AgendamentoDR) REFERENCES Agendamento(IdAgendamento),
-	FOREIGN KEY (MedicoDR) REFERENCES Medico(IdMedico)
+    StatusAgendamento VARCHAR(50),
+	MotivoCancelamento VARCHAR(255),
+	FOREIGN KEY (MedicoDR) REFERENCES Medico(IdMedico),
+    FOREIGN KEY (AgendaDR) REFERENCES Agenda(IdAgenda),
+    FOREIGN KEY (PacienteDR) REFERENCES Paciente(IdPaciente) 
 );
