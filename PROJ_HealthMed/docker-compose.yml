@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    container_name: sqlserver
+    environment:
+      SA_PASSWORD: "@Hackathon2025"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1433:1433"
+    volumes:
+      - sqlserverdata:/var/opt/mssql
+
+  api:
+    image: giulianojunior/HKTHealthMed:latest
+    container_name: HKTHealthMed
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - ConnectionStrings__DefaultConnection=Server=host.docker.internal,1433;Database=master;User Id=sa;Password=@Hackathon2025;TrustServerCertificate=True;
+    ports:
+      - "5000:80"
+    depends_on:
+      - sqlserver
+
+volumes:
+  sqlserverdata:
+    driver: local
