@@ -11,11 +11,11 @@ namespace PROJ_HealthMed
 {
     public class Program
     {
-        public static void Main(string[] args)
+        public static void Main(string[] args) 
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // Configuração de autenticação JWT
+            // Configuração de autenticação JWT ppln
             builder.Services.AddAuthentication(options =>
             {
                 options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
