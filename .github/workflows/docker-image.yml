@@ -28,7 +28,7 @@ jobs:
           dotnet-version: 8.0.x
 
       - name: Install Dependencies
-        run: dotnet restore "HKTHealthMed/PROJ_HealthMed/PROJ_HealthMed/PROJ_HealthMed.csproj"
+        run: dotnet restore HKTHealthMed/PROJ_HealthMed/PROJ_HealthMed/PROJ_HealthMed.csproj
 
       - name: Build
         run: dotnet build "HKTHealthMed/PROJ_HealthMed/PROJ_HealthMed/PROJ_HealthMed.csproj" --configuration Release --no-restore
