@@ -28,13 +28,14 @@ jobs:
           dotnet-version: 8.0.x
 
       - name: Install Dependencies
-        run: dotnet restore
+        run: dotnet restore PROJ_HealthMed/PROJ_HealthMed/PROJ_HealthMed.csproj
+        
 
       - name: Build
-        run: dotnet build --configuration Release --no-restore
+        run: dotnet build "PROJ_HealthMed/PROJ_HealthMed/PROJ_HealthMed.csproj" --configuration Release --no-restore
 
       - name: Run Tests
-        run: dotnet test --no-restore --verbosity normal
+        run: dotnet test PROJ_HealthMed/PROJ_HealthMed/PROJ_HealthMed.csproj --no-restore --verbosity normal
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v1
@@ -48,6 +49,6 @@ jobs:
       - name: Build and Push Docker Image
         uses: docker/build-push-action@v2
         with:
-          context: .
+          context: PROJ_HealthMed/PROJ_HealthMed/
           push: true
-          tags: giulianojunior/HKTHealthMed:latest
+          tags: giulianojunior/hkthealthmed:latest

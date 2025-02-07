@@ -12,11 +12,11 @@ EXPOSE 8081
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["PROJ_HealthMed/PROJ_HealthMed.csproj", "PROJ_HealthMed/"]
+COPY ["PROJ_HealthMed.csproj", "PROJ_HealthMed/"]
 RUN dotnet restore "./PROJ_HealthMed/PROJ_HealthMed.csproj"
 COPY . .
 WORKDIR "/src/PROJ_HealthMed"
-RUN dotnet build "./PROJ_HealthMed.csproj" -c $BUILD_CONFIGURATION -o /app/build
+RUN dotnet build "./PROJ_HealthMed.csproj" -c Release -o /app/build
 
 # Esta fase é usada para publicar o projeto de serviço a ser copiado para a fase final
 FROM build AS publish
