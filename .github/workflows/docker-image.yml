@@ -51,4 +51,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: giulianojunior/HKTHealthMed:latest
+          tags: giulianojunior/hkthealthmed:latest
