@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PROJ_HealthMed")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6f21323f2c0436eb2d0235838c2ef81e8cbd1f12")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+01e660ed1c55bc6c61665c6b17e86916043b48fb")]
 [assembly: System.Reflection.AssemblyProductAttribute("PROJ_HealthMed")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PROJ_HealthMed")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

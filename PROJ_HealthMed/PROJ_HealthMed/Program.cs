@@ -7,56 +7,65 @@ using System.Text;
 using Microsoft.Data.SqlClient;
 using System.Data;
 
-var builder = WebApplication.CreateBuilder(args);
-
-// Configuração de autenticação JWT
-builder.Services.AddAuthentication(options =>
+namespace PROJ_HealthMed
 {
-    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-})
-.AddJwtBearer(options =>
-{
-    options.TokenValidationParameters = new TokenValidationParameters
+    public class Program
     {
-        ValidateIssuer = true,
-        ValidateAudience = true,
-        ValidateLifetime = true,
-        ValidateIssuerSigningKey = true,
-        ValidIssuer = builder.Configuration["Jwt:Issuer"],
-        ValidAudience = builder.Configuration["Jwt:Audience"],
-        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
-    };
-});
+        public static void Main(string[] args)
+        {
+            var builder = WebApplication.CreateBuilder(args);
 
-// Configuração da conexão com o banco de dados
-var configuration = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build();
-var stringConexao = configuration.GetValue<string>("ConnectionStringSQL");
+            // Configuração de autenticação JWT
+            builder.Services.AddAuthentication(options =>
+            {
+                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            })
+            .AddJwtBearer(options =>
+            {
+                options.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuer = true,
+                    ValidateAudience = true,
+                    ValidateLifetime = true,
+                    ValidateIssuerSigningKey = true,
+                    ValidIssuer = builder.Configuration["Jwt:Issuer"],
+                    ValidAudience = builder.Configuration["Jwt:Audience"],
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
+                };
+            });
 
-// Adicionar serviços ao contêiner
-builder.Services.AddSingleton<IDbConnection>((conexao) => new SqlConnection(stringConexao));
-builder.Services.AddSingleton<IPaciente, PacienteRepository>();
-builder.Services.AddSingleton<IMedico, MedicoRepository>();
-builder.Services.AddSingleton<IAgenda, AgendaRepository>();
-builder.Services.AddSingleton<IAgendamento, AgendamentoRepository>();
-builder.Services.AddSingleton<TokenService>();
-builder.Services.AddControllers();
+            // Configuração da conexão com o banco de dados
+            var configuration = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build();
+            var stringConexao = configuration.GetValue<string>("ConnectionStrings:DefaultConnection");
 
-// Configuração do Swagger
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+            // Adicionar serviços ao contêiner
+            builder.Services.AddSingleton<IDbConnection>((conexao) => new SqlConnection(stringConexao));
+            builder.Services.AddSingleton<IPaciente, PacienteRepository>();
+            builder.Services.AddSingleton<IMedico, MedicoRepository>();
+            builder.Services.AddSingleton<IAgenda, AgendaRepository>();
+            builder.Services.AddSingleton<IAgendamento, AgendamentoRepository>();
+            builder.Services.AddSingleton<TokenService>();
+            builder.Services.AddControllers();
 
-var app = builder.Build();
+            // Configuração do Swagger
+            builder.Services.AddEndpointsApiExplorer();
+            builder.Services.AddSwaggerGen();
 
-// Configuração do pipeline de requisições HTTP
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
+            var app = builder.Build();
+
+            // Configuração do pipeline de requisições HTTP
+            if (app.Environment.IsDevelopment())
+            {
+                app.UseSwagger();
+                app.UseSwaggerUI();
+            }
+
+            app.UseHttpsRedirection();
+            app.UseAuthentication();
+            app.UseAuthorization();
+            app.MapControllers();
+            app.Run();
+        }
+    }
 }
-
-app.UseHttpsRedirection();
-app.UseAuthentication();
-app.UseAuthorization();
-app.MapControllers();
-app.Run();
