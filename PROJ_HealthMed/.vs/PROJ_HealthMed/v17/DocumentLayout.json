@@ -7,10 +7,6 @@
       "RelativeMoniker": "D:0:0:{598FB5F6-B74C-48CC-AA39-6C77F182AE7F}|PROJ_HealthMed\\PROJ_HealthMed.csproj|solutionrelative:proj_healthmed\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{598FB5F6-B74C-48CC-AA39-6C77F182AE7F}|PROJ_HealthMed\\PROJ_HealthMed.csproj|c:\\users\\giu_747\\documents\\github\\hkthealthmed\\hkthealthmed\\proj_healthmed\\proj_healthmed\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{598FB5F6-B74C-48CC-AA39-6C77F182AE7F}|PROJ_HealthMed\\PROJ_HealthMed.csproj|solutionrelative:proj_healthmed\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{598FB5F6-B74C-48CC-AA39-6C77F182AE7F}|PROJ_HealthMed\\PROJ_HealthMed.csproj|c:\\users\\giu_747\\documents\\github\\hkthealthmed\\hkthealthmed\\proj_healthmed\\proj_healthmed\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{598FB5F6-B74C-48CC-AA39-6C77F182AE7F}|PROJ_HealthMed\\PROJ_HealthMed.csproj|solutionrelative:proj_healthmed\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
@@ -21,6 +17,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{598FB5F6-B74C-48CC-AA39-6C77F182AE7F}|PROJ_HealthMed\\PROJ_HealthMed.csproj|c:\\users\\giu_747\\documents\\github\\hkthealthmed\\hkthealthmed\\proj_healthmed\\proj_healthmed\\controllers\\medicocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{598FB5F6-B74C-48CC-AA39-6C77F182AE7F}|PROJ_HealthMed\\PROJ_HealthMed.csproj|solutionrelative:proj_healthmed\\controllers\\medicocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{598FB5F6-B74C-48CC-AA39-6C77F182AE7F}|PROJ_HealthMed\\PROJ_HealthMed.csproj|c:\\users\\giu_747\\documents\\github\\hkthealthmed\\hkthealthmed\\proj_healthmed\\proj_healthmed\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{598FB5F6-B74C-48CC-AA39-6C77F182AE7F}|PROJ_HealthMed\\PROJ_HealthMed.csproj|solutionrelative:proj_healthmed\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{598FB5F6-B74C-48CC-AA39-6C77F182AE7F}|PROJ_HealthMed\\PROJ_HealthMed.csproj|c:\\users\\giu_747\\documents\\github\\hkthealthmed\\hkthealthmed\\proj_healthmed\\proj_healthmed\\repository\\pacienterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -60,26 +60,26 @@
               "RelativeDocumentMoniker": "PROJ_HealthMed\\Program.cs",
               "ToolTip": "C:\\Users\\Giu_747\\Documents\\GitHub\\HKTHealthMed\\HKTHealthMed\\PROJ_HealthMed\\PROJ_HealthMed\\Program.cs",
               "RelativeToolTip": "PROJ_HealthMed\\Program.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAwwEcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-07T19:32:44.087Z",
+              "WhenOpened": "2025-02-08T00:13:51.883Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Dockerfile",
               "DocumentMoniker": "C:\\Users\\Giu_747\\Documents\\GitHub\\HKTHealthMed\\HKTHealthMed\\PROJ_HealthMed\\PROJ_HealthMed\\Dockerfile",
               "RelativeDocumentMoniker": "PROJ_HealthMed\\Dockerfile",
               "ToolTip": "C:\\Users\\Giu_747\\Documents\\GitHub\\HKTHealthMed\\HKTHealthMed\\PROJ_HealthMed\\PROJ_HealthMed\\Dockerfile",
               "RelativeToolTip": "PROJ_HealthMed\\Dockerfile",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAA8AAAATAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-02-07T00:31:38.651Z"
+              "WhenOpened": "2025-02-08T00:13:43.762Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "AgendaController.cs",
               "DocumentMoniker": "C:\\Users\\Giu_747\\Documents\\GitHub\\HKTHealthMed\\HKTHealthMed\\PROJ_HealthMed\\PROJ_HealthMed\\Controllers\\AgendaController.cs",
               "RelativeDocumentMoniker": "PROJ_HealthMed\\Controllers\\AgendaController.cs",
@@ -91,7 +91,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "MedicoController.cs",
               "DocumentMoniker": "C:\\Users\\Giu_747\\Documents\\GitHub\\HKTHealthMed\\HKTHealthMed\\PROJ_HealthMed\\PROJ_HealthMed\\Controllers\\MedicoController.cs",
               "RelativeDocumentMoniker": "PROJ_HealthMed\\Controllers\\MedicoController.cs",
@@ -115,13 +115,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Giu_747\\Documents\\GitHub\\HKTHealthMed\\HKTHealthMed\\PROJ_HealthMed\\PROJ_HealthMed\\appsettings.json",
               "RelativeDocumentMoniker": "PROJ_HealthMed\\appsettings.json",
               "ToolTip": "C:\\Users\\Giu_747\\Documents\\GitHub\\HKTHealthMed\\HKTHealthMed\\PROJ_HealthMed\\PROJ_HealthMed\\appsettings.json",
               "RelativeToolTip": "PROJ_HealthMed\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-02-05T03:17:30.84Z"
             },
