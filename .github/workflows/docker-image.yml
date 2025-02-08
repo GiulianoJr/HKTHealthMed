@@ -40,7 +40,7 @@ jobs:
         run: dotnet build PROJ_HealthMed/PROJ_HealthMed/PROJ_HealthMed.csproj --configuration Release --no-restore
 
       - name: Run Tests
-        run: dotnet test PROJ_HealthMed/PROJ_HealthMed.csproj --no-restore --verbosity normal
+        run: dotnet test PROJ_HealthMed/PROJ_HealthMed/PROJ_HealthMed.csproj --no-restore --verbosity normal
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v1
