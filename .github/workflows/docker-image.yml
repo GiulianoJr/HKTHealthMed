@@ -52,7 +52,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Debug - List Files in Context
-        run: ls -R .
+        run: ls -R ./PROJ_HealthMed/PROJ_HealthMed
         
       - name: Build and Push Docker Image
         uses: docker/build-push-action@v2
