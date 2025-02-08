@@ -37,7 +37,7 @@ jobs:
         run: dotnet restore PROJ_HealthMed/PROJ_HealthMed/PROJ_HealthMed.csproj
 
       - name: Build
-        run: dotnet build "PROJ_HealthMed/PROJ_HealthMed.csproj" --configuration Release --no-restore
+        run: dotnet build PROJ_HealthMed/PROJ_HealthMed.csproj --configuration Release --no-restore
 
       - name: Run Tests
         run: dotnet test PROJ_HealthMed/PROJ_HealthMed.csproj --no-restore --verbosity normal
