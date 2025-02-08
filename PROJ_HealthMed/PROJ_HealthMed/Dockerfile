@@ -16,7 +16,7 @@ COPY ["PROJ_HealthMed.csproj", "./PROJ_HealthMed/"]
 RUN dotnet restore "./PROJ_HealthMed/PROJ_HealthMed.csproj"
 COPY . .
 WORKDIR "/src/PROJ_HealthMed"
-RUN dotnet build "./PROJ_HealthMed/PROJ_HealthMed/PROJ_HealthMed.csproj" -c $BUILD_CONFIGURATION -o /app/build
+RUN dotnet build "./PROJ_HealthMed/PROJ_HealthMed.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 # Esta fase é usada para publicar o projeto de serviço a ser copiado para a fase final
 FROM build AS publish
