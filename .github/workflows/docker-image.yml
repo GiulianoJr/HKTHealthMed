@@ -54,6 +54,6 @@ jobs:
       - name: Build and Push Docker Image
         uses: docker/build-push-action@v2
         with:
-          context: /PROJ_HealthMed/
+          context: PROJ_HealthMed/PROJ_HealthMed/PROJ_HealthMed.csproj
           push: true
           tags: giulianojunior/hkthealthmed:latest
