@@ -19,6 +19,9 @@ jobs:
           ACCEPT_EULA: "Y"
 
     steps:
+      - name: Debug - List Root Files
+        run: ls -R
+        
       - name: Checkout Code
         uses: actions/checkout@v2
 
@@ -29,7 +32,6 @@ jobs:
 
       - name: Install Dependencies
         run: dotnet restore PROJ_HealthMed/PROJ_HealthMed/PROJ_HealthMed.csproj
-        
 
       - name: Build
         run: dotnet build "PROJ_HealthMed/PROJ_HealthMed/PROJ_HealthMed.csproj" --configuration Release --no-restore
