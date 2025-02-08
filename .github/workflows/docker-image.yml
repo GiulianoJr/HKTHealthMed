@@ -34,13 +34,13 @@ jobs:
           dotnet-version: 8.0.x
 
       - name: Install Dependencies
-        run: dotnet restore PROJ_HealthMed/PROJ_HealthMed/PROJ_HealthMed.csproj
+        run: dotnet restore PROJ_HealthMed/PROJ_HealthMed.csproj
 
       - name: Build
-        run: dotnet build "PROJ_HealthMed/PROJ_HealthMed/PROJ_HealthMed.csproj" --configuration Release --no-restore
+        run: dotnet build "PROJ_HealthMed/PROJ_HealthMed.csproj" --configuration Release --no-restore
 
       - name: Run Tests
-        run: dotnet test PROJ_HealthMed/PROJ_HealthMed/PROJ_HealthMed.csproj --no-restore --verbosity normal
+        run: dotnet test PROJ_HealthMed/PROJ_HealthMed.csproj --no-restore --verbosity normal
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v1
